@@ -266,10 +266,10 @@ class Cards extends StatelessWidget {
                                   child: Row(
                                     children: const [
                                       Text(
-                                        "Apple Store",
+                                        "Apple Store ",
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                            fontSize: 18.0,
+                                            fontSize: 14.0,
                                             color: Colors.blueAccent),
                                       ),
                                       Icon(
@@ -287,10 +287,10 @@ class Cards extends StatelessWidget {
                                   child: Row(
                                     children: const [
                                       Text(
-                                        "Google Play",
+                                        "Google Play ",
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                            fontSize: 18.0,
+                                            fontSize: 14.0,
                                             color: Colors.blueAccent),
                                       ),
                                       Icon(MdiIcons.googlePlay)
