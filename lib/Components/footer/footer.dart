@@ -19,8 +19,12 @@ class Footer extends StatelessWidget {
           SizedBox(
             height: 2.h,
           ),
+         const  Text(
+            'Here is my social links :',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w300),
+          ),
           SizedBox(
-            height: 5.h,
+            height: 2.h,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,

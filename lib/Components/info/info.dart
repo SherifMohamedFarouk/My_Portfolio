@@ -36,7 +36,7 @@ class INFO extends StatelessWidget {
             // width: 250,
             // height: 250,
             child: Image.network(
-              'https://media0.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif',
+              'https://cdn.dribbble.com/users/330915/screenshots/3587000/10_coding_dribbble.gif',
               fit: BoxFit.cover,
             ),
           ),
@@ -64,7 +64,7 @@ class INFO extends StatelessWidget {
                     height: 2.h,
                   ),
                   Container(
-                    height: 40.h,
+                    height: 30.h,
                     width: 70.w,
                     child: Text(
                       'Passionate and highly effective developer who has successfully developed applications for Flutter (Dart) and Android with (Kotlin and Java ). Well-educated and poised , Seeking an exciting opportunity to create and test applications.',
