@@ -11,12 +11,14 @@ class ProjectCards extends StatelessWidget {
   final List<CardData> cardContent = [
     CardData(
         projectDesc:
-            '''- It is a music app developed by Flutter Dart, where the user can post and listen to music, and connect to Spotify and apple music, send songs from apple to Spotify and vice versa.
+            '''- truzi is a music app developed by Flutter Dart, where the user can post and listen to music, and connect to Spotify and apple music, send songs from apple to Spotify and vice versa.
 - it includes a profile page and onboarding phase where the user sees the top artist this month and makes their own vibe check to connect with other users. and more.''',
         projectScreen1: 'assets/truzi/Capture1.PNG',
         projectScreen2: 'assets/truzi/Capture3.PNG',
         projectScreen3: 'assets/truzi/Capture6.PNG',
-        inDevelopment: true,
+        projectUrlApple: 'https://apps.apple.com/app/truzi/id1607909438',
+        projectUrlGoogle:
+            'https://play.google.com/store/apps/details?id=com.newwave.ev&hl=en_US&gl=US',
         type: "Mobile App"),
     CardData(
         projectDesc:
@@ -72,6 +74,15 @@ please visit vlenseg.com for more info and use cases.''',
         type: "WebSite"),
     CardData(
         projectDesc:
+            '''The Cars of Egyptians Abroad application provides you with the feature of requesting to import a car from your country of residence,
+             and also provides you with the feature of calculating fees and tracking the application until the issuance of your import approval.''',
+        projectScreen1: 'assets/cars/cars1.png',
+        projectScreen2: 'assets/cars/cars2.png',
+        projectScreen3: 'assets/cars/cars3.png',
+        inDevelopment: true,
+        type: "Mobile App"),
+    CardData(
+        projectDesc:
             '''Purple Bureau is a communication & HR SaaS mobile application that will help you & your employees enjoying an exceptional new experience that ensures effective communication & engagement..''',
         projectScreen1: 'assets/purplebureau/Capture.PNG',
         projectScreen2: 'assets/purplebureau/Capture2.PNG',
@@ -91,6 +102,17 @@ please visit vlenseg.com for more info and use cases.''',
         projectScreen3: 'assets/images/screen3.png',
         projectUrlGoogle:
             'https://play.google.com/store/apps/details?id=com.airavas.myfuse',
+        type: "Mobile App"),
+    CardData(
+        projectDesc:
+            '''Quickly find information on anime you're watching, read reviews of manga you're planning to read.
+See the best of what's airing now, or marathon the highest-rated anime from previous seasons.
+Switch between dark/light mode..''',
+        projectScreen1: 'assets/images/anime1.png',
+        projectScreen2: 'assets/images/anime2.png',
+        projectScreen3: 'assets/images/anime3.png',
+        projectUrlGoogle:
+            'https://play.google.com/store/apps/details?id=com.animeniac.animeniac',
         type: "Mobile App"),
   ];
 
@@ -189,11 +211,13 @@ class Cards extends StatelessWidget {
       // border: Border.all(color: primaryColor)),
       child: Column(
         children: [
-          Center(child:Padding(
+          Center(
+              child: Padding(
             padding: const EdgeInsets.only(top: 10.0),
             child: Text(
               content.type,
-              style: TextStyle(fontSize: 3.sp > 13 ? 3.sp : 13,fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: 3.sp > 13 ? 3.sp : 13, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
           )),
