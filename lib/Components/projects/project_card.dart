@@ -244,7 +244,7 @@ class Cards extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 35,
           ),
           Padding(
@@ -255,7 +255,7 @@ class Cards extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           content.inDevelopment
@@ -287,8 +287,8 @@ class Cards extends StatelessWidget {
                                   onTap: () {
                                     openURL(content.projectUrlApple!);
                                   },
-                                  child: Row(
-                                    children: const [
+                                  child: const Row(
+                                    children: [
                                       Text(
                                         "Apple Store ",
                                         textAlign: TextAlign.center,
@@ -308,8 +308,8 @@ class Cards extends StatelessWidget {
                                   onTap: () {
                                     openURL(content.projectUrlGoogle!);
                                   },
-                                  child: Row(
-                                    children: const [
+                                  child: const Row(
+                                    children: [
                                       Text(
                                         "Google Play ",
                                         textAlign: TextAlign.center,
