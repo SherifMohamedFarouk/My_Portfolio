@@ -43,13 +43,20 @@ class _NavDesktopState extends State<NavDesktop> {
                 onTap: () {
                   context.read<ThemeCubit>().updateTheme(!state.isDarkThemeOn);
                 },
-                child: Image.asset(
-                  state.isDarkThemeOn
-                      ? "assets/images/dark.png"
-                      : "assets/images/light.png",
-                  height: 30,
-                  width: 30,
-                  color: state.isDarkThemeOn ? Colors.black : Colors.white,
+                child: Row(
+                  children: [
+                    Image.asset(
+                      state.isDarkThemeOn
+                          ? "assets/images/dark.png"
+                          : "assets/images/light.png",
+                      height: 30,
+                      width: 30,
+                      color: state.isDarkThemeOn ? Colors.black : Colors.white,
+                    ),
+                    const SizedBox(width: 5),
+                    Text(state.isDarkThemeOn
+                        ?"Dark mode":"Light mode")
+                  ],
                 )),
           ],
         ),
